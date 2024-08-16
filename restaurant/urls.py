@@ -12,5 +12,5 @@ urlpatterns = [
     path("menu/", views.MenuListCreateAPIView.as_view(), name="menu-list-create"),
     path("menu/<int:pk>/", views.MenuDetailAPIView.as_view(), name="menu-detail"),
     path("", include(router.urls)),
-    path("api-token-auth/", obtain_auth_token),
+    path("api-token-auth/", obtain_auth_token, name="api-token-auth"),
 ]
