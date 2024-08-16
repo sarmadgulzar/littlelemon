@@ -1,11 +1,11 @@
 meta {
-  name: Delete Menu Item
+  name: Get Menu Item
   type: http
-  seq: 5
+  seq: 3
 }
 
-delete {
-  url: {{API_BASE_URL}}/restaurant/menu/1/
+get {
+  url: {{API_BASE_URL}}/menu-items/1
   body: none
   auth: none
 }
