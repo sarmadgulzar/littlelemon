@@ -1,0 +1,23 @@
+meta {
+  name: Create Menu Item
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_BASE_URL}}/restaurant/menu/
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Token {{ACCESS_TOKEN}}
+}
+
+body:json {
+  {
+    "title": "Ckae",
+    "price": 10,
+    "inventory": 100
+  }
+}

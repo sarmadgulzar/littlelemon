@@ -1,0 +1,18 @@
+meta {
+  name: Create Token
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{API_BASE_URL}}/restaurant/api-token-auth/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "username": "a",
+    "password": "$trongP@@$$word"
+  }
+}

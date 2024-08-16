@@ -1,0 +1,21 @@
+meta {
+  name: Update Booking
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_BASE_URL}}/restaurant/booking/1/
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Token {{ACCESS_TOKEN}}
+}
+
+body:json {
+  {
+    "name": "New"
+  }
+}

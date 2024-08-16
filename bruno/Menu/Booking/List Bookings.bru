@@ -1,0 +1,15 @@
+meta {
+  name: List Bookings
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_BASE_URL}}/restaurant/booking/
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Token {{ACCESS_TOKEN}}
+}

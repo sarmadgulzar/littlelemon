@@ -1,0 +1,23 @@
+meta {
+  name: Create Booking
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_BASE_URL}}/restaurant/booking/
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Token {{ACCESS_TOKEN}}
+}
+
+body:json {
+  {
+    "name": "New",
+    "no_of_guests": 5,
+    "booking_date": "2024-08-17"
+  }
+}

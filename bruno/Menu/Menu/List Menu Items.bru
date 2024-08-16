@@ -1,0 +1,15 @@
+meta {
+  name: List Menu Items
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_BASE_URL}}/restaurant/menu/
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Token {{ACCESS_TOKEN}}
+}
